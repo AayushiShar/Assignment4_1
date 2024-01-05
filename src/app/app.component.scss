@@ -1,0 +1,42 @@
+.stopwatch{
+    background-color: rgb(179, 255, 0);
+    height:300px;
+    width: 300px;
+    text-align: centre;
+    color:white;
+    margin: auto;
+    padding-top:150px;
+   
+    
+}
+.button-container{
+    display: flex;
+    flex: 0 0 33%;
+    justify-content: space-around;
+}
+.play-pause{
+    cursor: pointer;
+    height: 90px;
+    width:90px;
+
+    background-color: green;
+}
+.ripple{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+
+    height: 90px;
+    width: 90px;
+}
+.sw-container{
+    background-color: aqua;
+    height: 300px;
+width: 300px;
+text-align :center;
+display: flex;
+flex-direction: column;
+margin-left:200px;
+margin-top:200px;
+margin-bottom: 200px;
+}
