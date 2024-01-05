@@ -1,0 +1,38 @@
+<!-- <div class="sw-container">
+  <div class="stopwatch">
+    <span>{{hr}} :</span>
+    <span>{{min}} :</span>
+    <span>{{sec}} :</span>
+   
+    <span>{{ms}} :</span>
+
+  </div>
+  <div class="button-container">
+    <button class="btn-play-pause ripple" (click)="start()">
+      <i *ngIf="!running"class="fas fa-play"></i>
+      <i *ngIf="running"class="fas fa-pause"></i>
+    </button>
+    <button class="ripple">
+       <i class="fas fa-redo-alt"></i>
+    </button>
+  </div>
+</div> -->
+<h1 style="text-align: center;">TimerTool</h1>
+<div class="sw-container">
+  <div class="stopwatch">
+    <!-- <span>{{hr}} :</span> -->
+    <span>{{min}} :</span>
+    <span>{{sec}} :</span>
+    <span>{{ms}} :</span>
+  </div>
+  <div class="button-container">
+    <button class="play-pause" (click)="start()">
+      <i *ngIf="!running" class="fas fa-play">Start</i>
+      <i *ngIf="running" class="fas fa-pause"> </i>
+     
+    </button>
+    <button class="ripple">
+      <i class="fas fa-redo-alt" (click)="reset()">Reset</i>
+    </button>
+  </div>
+</div>
