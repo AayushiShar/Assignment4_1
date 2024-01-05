@@ -38,7 +38,7 @@ export class AppComponent {
          // this.min=this.min<10?'0'+ this.sec : this.sec;
           this.sec=60;
         }
-        if(this.min===0&& this.sec===0&&this.ms===0){
+        if(this.min===0 && this.sec===0 && this.ms===0){
           this.stop();
         }
         
