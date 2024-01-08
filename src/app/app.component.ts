@@ -40,6 +40,7 @@ export class AppComponent {
         }
         if(this.min===0 && this.sec===0 && this.ms===0){
           this.stop();
+          this.running=true;
         }
         
       },10);
