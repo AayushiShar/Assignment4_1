@@ -1,38 +1,22 @@
-<!-- <div class="sw-container">
-  <div class="stopwatch">
-    <span>{{hr}} :</span>
-    <span>{{min}} :</span>
-    <span>{{sec}} :</span>
-   
-    <span>{{ms}} :</span>
-
-  </div>
-  <div class="button-container">
-    <button class="btn-play-pause ripple" (click)="start()">
-      <i *ngIf="!running"class="fas fa-play"></i>
-      <i *ngIf="running"class="fas fa-pause"></i>
-    </button>
-    <button class="ripple">
-       <i class="fas fa-redo-alt"></i>
-    </button>
-  </div>
-</div> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <h1 style="text-align: center;">TimerTool</h1>
 <div class="sw-container">
   <div class="stopwatch">
     <!-- <span>{{hr}} :</span> -->
-    <span>{{min}} :</span>
-    <span>{{sec}} :</span>
-    <span>{{ms}} :</span>
+    <span><h2>{{min}} :</h2></span>
+    <span><h2>{{sec}} :</h2></span>
+    <span><h2>{{ms}} </h2> </span>
   </div>
   <div class="button-container">
     <button class="play-pause" (click)="start()">
       <i *ngIf="!running" class="fas fa-play">Start</i>
-      <i *ngIf="running" class="fas fa-pause"> </i>
+      <i *ngIf="running" class="fas fa-pause" style="background-color: red;">Pause </i>
      
     </button>
     <button class="ripple">
       <i class="fas fa-redo-alt" (click)="reset()">Reset</i>
     </button>
+    
   </div>
+  <div *ngIf="completed">Times Up</div>
 </div>

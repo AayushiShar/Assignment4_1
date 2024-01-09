@@ -3,9 +3,13 @@
     height:300px;
     width: 300px;
     text-align: centre;
-    color:white;
+    color: blue;
+    
     margin: auto;
     padding-top:150px;
+    border-radius: 50%;
+    padding-bottom: 50px;
+    border:2px solid green;
    
     
 }
@@ -18,8 +22,9 @@
     cursor: pointer;
     height: 90px;
     width:90px;
-
+    border-radius: 50%;
     background-color: green;
+    box-shadow: 2px 2px black;
 }
 .ripple{
     cursor: pointer;
@@ -28,10 +33,12 @@
 
     height: 90px;
     width: 90px;
+    border-radius: 50%;
+    box-shadow: 2px 2px black;
 }
 .sw-container{
     background-color: aqua;
-    height: 300px;
+    height: 400px;
 width: 300px;
 text-align :center;
 display: flex;
@@ -39,4 +46,13 @@ flex-direction: column;
 margin-left:200px;
 margin-top:200px;
 margin-bottom: 200px;
+// border-radius: 50%;
+margin-left: 1150px;
+margin-right: 1200px;
+margin:auto;
+border-radius: 30%;
+box-shadow: 10px 10px rgb(4, 128, 128);
+}
+h2{
+    display: inline-block;
 }
